@@ -30,7 +30,7 @@ public List(){
     setSize(800,400);
     p3.setForeground(Color.white);
     l1.setForeground(Color.white);
-    jl.setForeground(Color.white);
+    
     p3.add(l1);
     p1.add(jl);
     p2.add(b1);

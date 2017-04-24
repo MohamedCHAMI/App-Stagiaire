@@ -7,7 +7,7 @@ package demomenu;
 
 /**
  *
- * @author simo
+ * @author MCCrime
  */
 public class Stagiaire {
     private String Nom ;

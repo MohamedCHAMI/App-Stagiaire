@@ -7,7 +7,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.*;
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;

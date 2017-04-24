@@ -1,28 +1,22 @@
 
 package demomenu;
 
-import static demomenu.Groupe.L;
 import javax.swing.JFrame;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.Vector;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
-import javax.swing.JList;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableModel;
 
 public class Tableau extends JFrame {
     private JLabel l1 = new JLabel("Liste des Stagiaires",JLabel.CENTER);
     DefaultTableModel m=new DefaultTableModel();
     JTable jl = new JTable(m);
-    String E[] = {"Nom" ,"Prenom" , "Sexe", "Fillier","Niveau"};
+    String[] title = {"Nom ", "Prenom", "Fillier", "Niveau"};
     private JButton b1 =new JButton("Supprimer");
     private JButton b2 =new JButton("Fermer");
     
@@ -37,7 +31,7 @@ public Tableau(){
     setTitle("Tableau Stagiaire");
     this.setLocation(250, 200);
     setSize(800,400);
-    m.setColumnIdentifiers(E);
+    m.setColumnIdentifiers(title);
     m.addColumn("nom");
     m.addColumn("Prenom");
     m.addColumn("Sexe");
@@ -68,8 +62,8 @@ m.addRow(Groupe.L);
 
     js.setForeground(Color.DARK_GRAY);
     js.setForeground(Color.white);
-    int i = jl.getSelectedRow();
-    m.removeRow(i);
+    //int i = jl.getSelectedRow();
+    //m.removeRow(i);
     
 }
     
